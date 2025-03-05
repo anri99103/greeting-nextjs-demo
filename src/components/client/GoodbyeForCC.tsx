@@ -5,7 +5,7 @@ export const GoodbyeForCC = () => {
   const [message, setMessage] = useState("")
 
   useEffect(() => {
-    const fetchHello = async () => {
+    const fetchGoodbye = async () => {
       const res = await fetch("/api/greeting/goodbye", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -14,7 +14,7 @@ export const GoodbyeForCC = () => {
       const data = await res.json()
       setMessage(data.message)
     }
-    fetchHello()
+    fetchGoodbye()
   }, [])
 
   return (
