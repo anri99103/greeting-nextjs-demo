@@ -12,7 +12,7 @@ export const GoodbyeForSA = () => {
 
   return (
     <div>
-      <button onClick={handleClick}>Get Goodbye</button>
+      <button onClick={handleClick}>Goodbye</button>
       <p>{message}</p>
     </div>
   )

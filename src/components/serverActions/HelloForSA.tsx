@@ -12,7 +12,7 @@ export const HelloForSA = () => {
 
   return (
     <div>
-      <button onClick={handleClick}>Get Hello</button>
+      <button onClick={handleClick}>Hello</button>
       <p>{message}</p>
     </div>
   )
